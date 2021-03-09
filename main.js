@@ -116,6 +116,7 @@ function checkItems(things, parent){
     
     if (contErr > 0) {
         document.getElementById("result").innerHTML = "Inténtalo otra vez<br>Has tenido " + contErr + " errores"
+        document.getElementById("result").style.color = "rgb(158, 1, 1)";
     } else {
         document.getElementById("result").innerHTML = "Enhorabuena, no has tenido ningún fallo"
         document.getElementById("result").style.color = "#7CFC00";
