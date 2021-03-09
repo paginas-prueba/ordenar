@@ -5,6 +5,12 @@ $(function(){
         $("body").removeClass("dragging");
 
         getInitialOrder('#sort-it li');
+      },
+      onUpdate: function(item) {
+        $(item).removeClass("dragged").removeAttr("style");
+        $("body").removeClass("dragging");
+
+        getInitialOrder('#sort-it li');
       }
     });
         
@@ -60,7 +66,7 @@ function updateAllNumbers(currObj, targets){
     });
 }
 
-function checkItems(things, parent){
+function checkItems(things){
     contErr = 0;
     $(things).each(function(){
         if ($(this).find('input').val() == 1){
