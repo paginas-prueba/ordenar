@@ -1,20 +1,26 @@
 body {
-    font-family: sans-serif;
-    background-color: #0C7473;
+    font-family: "Montserrat", sans-serif;
+    background-image: url("./background.jpeg");
+    background-size: cover;
+    background-position: center;
 }
 
-input { font-size: 1em; } /* prevent zoom in mobile */
+input {
+    font-size: 1em;
+}
 
-ol { 
-  /* list style is faked with number inputs */
+/* prevent zoom in mobile */
+
+ol {
+    /* list style is faked with number inputs */
     list-style: none;
     padding: 0;
     text-align: center;
-    display:inline-block;
+    display: inline-block;
 }
 
-li { 
-    position: relative; 
+li {
+    position: relative;
     min-height: 1em;
     cursor: move;
     padding: .5em .5em .5em 2.5em;
@@ -24,18 +30,18 @@ li {
     border-radius: .25em;
     max-width: 14em;
 }
-    
-li input { 
+
+li input {
     /* Move these to visually fake the ol numbers */
     position: absolute;
     width: 3em;
     left: .25em;
-    top: .4em;
+    top: .5em;
     border: 0;
     text-align: center;
     background: transparent;
     pointer-events: none;
-    color: red;
+    color: #257811;
 }
 
 /* sortable plugin styles when dragged */
@@ -47,22 +53,27 @@ li input {
 
 li.placeholder {
     position: relative;
-    background: white; 
+    background: white;
 }
 
 h1 {
     position: relative;
     text-align: center;
+    color: white;
+    font-weight: bolder;
 }
 
-p{
+p {
     position: relative;
     text-align: center;
+    color: white;
+    font-weight: normal;
 }
 
 form {
     position: relative;
     text-align: center;
+    font-weight: bold;
 }
 
 .result {
